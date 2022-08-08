@@ -36,7 +36,7 @@ public class HttpManager : MonoBehaviour
 
             foreach (ScoreData score in resData.scores)
             {
-                Debug.Log(score.userId +" | "+score.value);
+                Debug.Log(score.user +" | "+score.score);
             }
         }
         else
@@ -51,8 +51,8 @@ public class HttpManager : MonoBehaviour
 [System.Serializable]
 public class ScoreData
 {
-    public int userId;
-    public int value;
+    public string user;
+    public int score;
 
 }
 
